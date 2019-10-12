@@ -1,0 +1,73 @@
+# dionysus quick settings
+
+# user provided variables aren't currently escaped for bash, sed, or irssi config
+# be aware when using special characters
+
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+# irc segment
+
+anope_from_source=0
+
+# unreal and anope
+irc_network_hostname="localhost.net"
+irc_services_hostname="services.localhost.net"
+irc_stats_hostname="stats.localhost.net"
+irc_server_uplink_pass="uplinkpasschangeme"
+irc_network_name="LocalNet"
+irc_sendfrom_mail="irc@localhost.net"
+irc_server_hostname="irc.foonet.com"
+irc_server_info="FooNet Server"
+irc_server_admin_name="admin"	
+irc_server_admin_nick="admin"
+irc_server_admin_mail="admin@foonet.com"
+kline_address="kline@foonet.com"
+
+# set this to 0 to skip additional channels without prompt, 1 to use the values in channel_names, or 3 to prompt for additional channels
+predefined_channels=0
+# additional predefined channel names (without leading #)
+channel_names=("additional_channel", "another_channel")
+
+admin_oper_name="admin"
+admin_oper_whois="admin whois"
+admin_oper_vhost="admin.vhost"
+admin_oper_password="adminoperpasschangeme"
+
+# set this to 0 to skip additional opers without prompt, 1 to use the values in oper_names and oper_passwords, or 3 to prompt for opers
+predefined_opers=0
+oper_names=("additional_oper", "another_oper")
+oper_passwords=("additionaloperpasschangeme", "anotheroperpasschangeme")
+oper_whoises=("additional oper whois", "another oper whois")
+oper_vhosts=("additional.oper.vhost", "another.oper.vhost")
+
+# irc helper
+irc_helper_nick="helper"
+irc_helper_nick_pass="helpernickpasschangeme"
+irc_helper_mail="helper@foonet.com"
+irc_helper_vhost="helper.vhost"
+irc_helper_oper=0
+irc_helper_oper_name="another_oper"
+irc_helper_oper_pass="anotheroperpasschangeme"
+
+# znc
+znc_port="6698"
+znc_admin_name="admin"
+znc_admin_pass="zncadminpasschangeme"
+
+# set this to 0 to skip additional znc users without prompt, 1 to use the values in znc_user_names and znc_user_passwords, or 3 to prompt for znc users
+predefined_znc_users=0
+znc_user_names=("another_znc_user")
+znc_user_passwords=("anotherzncuserpasschangeme")
+
+# set this to 0 to skip discord bridge install, 1 to install discord bridge, or 3 to prompt for discord bridge install
+install_discord_bridge=1
+discord_bridge_bot_nick="discord_foonet"
+discord_bridge_bot_nick_pass="discordircbridgenickpasschangeme"
+discord_bridge_bot_mail="discord_irc_bridge@foonet.com"
+# your discord bot api token
+discord_bridge_bot_token=""
+discord_channel_id=""
+discord_webhook_url=""
+discord_irc_channel="discord"
