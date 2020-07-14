@@ -71,3 +71,53 @@ discord_bridge_bot_token=""
 discord_channel_id=""
 discord_webhook_url=""
 discord_irc_channel="discord"
+
+################################################################################
+################################################################################
+################################################################################
+################################################################################
+# matrix segment
+
+# synapse
+
+synapse_server_hostname="synapse.localhost.net"
+matrix_server_hostname="localhost.net"
+synapse_server_port="443"
+
+# set this to 0 to skip leave user presence enabled without prompt, 1 to disable user presence, or 3 to prompt for disabling user presence
+synapse_disable_user_presence=0
+
+# set this to 0 to skip whitelisted federation servers without prompt, 1 to use the values in synapse_whitelisted_servers, or 3 to prompt for whitelisted federation servers
+predefined_synapse_whitelist=3
+synapse_whitelisted_servers=("lon.example.com","nyc.example.com")
+synapse_admin_contact="admin@localhost.net"
+synapse_url_preview_enabled="True"
+turn_shared_secret=""
+#TODO identity_server_hostname=""
+synapse_signing_key=""
+synapse_password_pepper=""
+
+# set this to 1 if an external server is handling ssl and is reverse proxying to the actual dimension server, 0 to set up a virtualhost to handle ssl and reverse proxy to the actual dimension server, 3 to prompt
+synapse_external_reverse_proxy=0
+
+synapse_admin_user_name="admin"
+synapse_admin_user_pass="synapseadminpasschangeme"
+
+# dimension
+
+# set this to 1 if an external server is handling ssl and is reverse proxying to the actual dimension server, 0 to set up a virtualhost to handle ssl and reverse proxy to the actual dimension server, 3 to prompt
+dimension_external_reverse_proxy=0
+integrations_server_hostname="integrations.localhost.net"
+
+dimension_bot_user_name="dimension"
+stickers_bot_user_name="stickers"
+dimension_sticker_manager_url="https://stickers.localhost.net"
+
+# riot
+
+riot_disable_guests="true"
+riot_default_country_code="GB"
+riot_show_labs_settings="true"
+riot_default_theme="dark"
+riot_server_hostname="riot.localhost.net"
+riot_external_reverse_proxy=0
